@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Free Comment</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.11.3.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/popup.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row text-center title">
+            <h1>Free Comment</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+				<div class="container">
+					<div class="btn-group btn-group-justified" role="group" aria-label="..." id="tabs">
+					  <div class="btn-group" role="group" class="active">
+						<button type="button" data-toggle="pill" href="#comments" class="btn btn-default">Comments</button>
+					  </div>
+					  <div class="btn-group" role="group">
+						<button type="button" data-toggle="pill" href="#leave_comment" class="btn btn-default">Leave Comment</button>
+					  </div>
+					</div>
+				</div>
+
+                <div class="tab-content">
+					<div id="comments" class="panel-body tab-pane fade in active scroll" style="height: 300px; overflow-y: auto;">
+                            <div class="well well-sm">
+								<h6><u><b>GoxeL</b> - 14:07 19.07.2015</u></h6>
+								<h6>Bu bir yorum denemesidir</h6>
+							</div>
+                    </div>
+					
+                    <div id="leave_comment" class="panel-body tab-pane fade">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <input type="text" class="form-control disabled" name="url" id="url" placeholder="Target URL" disabled>
+                            </div>
+							
+							<div class="form-group">
+                                <input type="text" class="form-control disabled" name="nickname" id="nickname" placeholder="Default nickname is Anon. You can change.">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea class="form-control" name="comment" id="comment" rows="7" placeholder="Comment here"></textarea>
+                            </div>
+
+                            <button class="btn btn-info btn-block"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <iframe width="100%" height="200px" style="display:none;" src="" name="frame" id="frame" />
+
+</body>
+
+</html>
